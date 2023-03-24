@@ -1,19 +1,21 @@
 import Header from "./components/Header"
 import Main from "./components/Main"
-import { Text } from "@chakra-ui/react"
+import { Box, Text, Heading } from "@chakra-ui/react"
 import Affiliates from "./components/Affiliates"
+import Course from "./components/courses"
 
-Text.defaultProps = {
+Text.defaultProps, Heading.defaultProps = {
   fontFamily: 'Clash Display'
 }
 
 function App() {
   return (
-    <div>
+    <Box>
       <Header />
       <Main />
       <Affiliates />
-    </div>
+      <Course />
+    </Box>
   )
 }
 
