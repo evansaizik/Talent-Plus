@@ -21,7 +21,10 @@ const Affiliates = () => {
         <Image src={stripe} transform={{ md: 'scale(.7)' }} />
       </Box>
       <Box w={{ base: '43px', md: '129px' }} h={{ base: '9px', md: '29' }}>
-        <Image transform={{ base: 'scale(2)', md: 'scale(1.4)' }} src={monday} />
+        <Image
+          transform={{ base: 'scale(2)', md: 'scale(1.4)' }}
+          src={monday}
+        />
       </Box>
       <Box w={{ base: '43px', md: '129px' }} h={{ base: '9px', md: '29' }}>
         <Image transform={{ base: 'scale(1.5)', md: 'scale(1)' }} src={slack} />
