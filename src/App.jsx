@@ -8,6 +8,7 @@ import Browse from './components/Browse';
 import Testimony from './components/Testimony';
 import Connect from './components/Connect';
 import Faq from './components/Faq';
+import Footer from './components/Footer';
 
 Text.defaultProps,
   (Heading.defaultProps = {
@@ -26,6 +27,7 @@ function App() {
       <Testimony />
       <Connect />
       <Faq />
+      <Footer />
     </Box>
   );
 }
