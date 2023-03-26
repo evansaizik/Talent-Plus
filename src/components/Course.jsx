@@ -16,8 +16,8 @@ import dollar from '../assets/dollar.svg';
 import people from '../assets/people.svg';
 
 Text.defaultProps = {
-  fontFamily: 'Satoshi'
-}
+  fontFamily: 'Satoshi',
+};
 
 const Course = () => {
   return (
@@ -25,7 +25,7 @@ const Course = () => {
       as="main"
       bg="#F8F9FC"
       w="100%"
-      pb='80px'
+      pb="80px"
       gap="10px"
       pt={{ base: '50px', md: '0' }}
       templateColumns={{ md: 'repeat(2, 1fr)' }}

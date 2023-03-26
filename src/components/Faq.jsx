@@ -14,7 +14,13 @@ const Faq = () => {
   return (
     <Box as="section" bg="#F8F9FC" pb="83px">
       <Box mt={{ base: '40px' }} w={{ base: '93%', lg: '65%' }} mx="auto">
-        <Heading fontSize={{base: '24px', lg: '56px'}} lineHeight={{base: '29.5px', lg: '68.9px'}} textAlign="center">Frequently Asked Questions</Heading>
+        <Heading
+          fontSize={{ base: '24px', lg: '56px' }}
+          lineHeight={{ base: '29.5px', lg: '68.9px' }}
+          textAlign="center"
+        >
+          Frequently Asked Questions
+        </Heading>
         <Text
           mx="auto"
           textAlign="center"

@@ -147,8 +147,17 @@ const Connect = () => {
           left="88%"
         />
       </Box>
-      <Box m='auto' pb='40px' w='300px' textAlign='center'>
-        <Button  color='#004DB3' borderRadius={{base: '2px', lg: '4px'}} fontSize={{base: '8px', lg: '16px'}} w={{base: '110px', lg: '220px'}} h={{base: '27px', lg:'54px'}} m='auto'>Join Our Community</Button>
+      <Box m="auto" pb="40px" w="300px" textAlign="center">
+        <Button
+          color="#004DB3"
+          borderRadius={{ base: '2px', lg: '4px' }}
+          fontSize={{ base: '8px', lg: '16px' }}
+          w={{ base: '110px', lg: '220px' }}
+          h={{ base: '27px', lg: '54px' }}
+          m="auto"
+        >
+          Join Our Community
+        </Button>
       </Box>
     </Box>
   );

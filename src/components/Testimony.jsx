@@ -16,7 +16,7 @@ import pagination from '../assets/pagination.svg';
 
 const Testimony = () => {
   return (
-    <Box bg="#F8F9FC" pb='40px'>
+    <Box bg="#F8F9FC" pb="40px">
       <Box pt={{ base: '70px', md: '135' }} m="auto">
         <Heading textAlign="center">What Our Clients Are Saying</Heading>
         <Text
@@ -34,15 +34,12 @@ const Testimony = () => {
           definition, generally any standard video image
         </Text>
       </Box>
-      <Box
-        as="section"
-        w="full"
-        overflow="hidden"
-      >
+      <Box as="section" w="full" overflow="hidden">
         <Flex
           mt={{ base: '56px', md: '48px' }}
           gap={{ base: '16px', lg: '24px' }}
-          position="relative" h={{base: '180px', lg: '250px'}}
+          position="relative"
+          h={{ base: '180px', lg: '250px' }}
         >
           <Card
             position="absolute"

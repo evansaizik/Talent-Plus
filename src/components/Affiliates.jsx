@@ -8,10 +8,10 @@ import monday from '../assets/monday.svg';
 const Affiliates = () => {
   return (
     <HStack
-      justifyContent='space-evenly'
-      as='section'
-      bg='#CCDBF0'
-      w='100%'
+      justifyContent="space-evenly"
+      as="section"
+      bg="#CCDBF0"
+      w="100%"
       h={{ base: '60px', md: '100px' }}
     >
       <Box w={{ base: '43px', md: '129px' }} h={{ base: '9px', md: '29' }}>
