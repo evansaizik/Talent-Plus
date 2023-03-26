@@ -11,7 +11,6 @@ import {
   Flex,
   CardHeader,
   CardBody,
-  CardFooter,
 } from '@chakra-ui/react';
 import conference from '../assets/conference.svg';
 import audience from '../assets/audience.svg';
@@ -52,6 +51,8 @@ const Browse = () => {
         </Heading>
         <Text
           mt="8px"
+          mx='auto'
+          w={{base: '70%', lg: '500px'}}
           lineHeight="200%"
           color="#A1A1A1"
           textAlign="center"
@@ -105,7 +106,7 @@ const Browse = () => {
         templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)' }}
       >
         <Card>
-          <CardHeader pb="3px">
+          <CardHeader pb={{ base: '3px', md: '15.3' }}>
             <Image
               bg="rgba(30, 93, 206, 0.2)"
               src={conference}
@@ -115,40 +116,61 @@ const Browse = () => {
           <CardBody pt="0">
             <Flex justifyContent="space-between">
               <Button
-                w={{ base: '29px', md: '' }}
+                w={{ base: '29px', md: '79px' }}
                 fontWeight="700"
-                h={{ base: '9px' }}
+                h={{ base: '9px', md: '24px' }}
                 fontSize={{ base: '4px', md: '8px' }}
                 color="#1E5DCE"
+                borderRadius="full"
               >
                 Design
               </Button>
-              <Text color="#A1A1A1" fontSize={{ base: '4px' }}>
+              <Text color="#A1A1A1" fontSize={{ base: '4px', md: '12px' }}>
                 {' '}
-                4.7k <Image display={'inline'} src={grade} alt="grade" />{' '}
+                4.7k{' '}
+                <Image
+                  w={{ md: '13.3' }}
+                  h={{ md: '12.7' }}
+                  display={'inline'}
+                  src={grade}
+                  alt="grade"
+                />
                 (32.7k+)
               </Text>
             </Flex>
-            <Box mt="10px" w="155px">
+            <Box
+              mt={{ base: '10px', md: '28px' }}
+              w={{ base: '155px', md: '200px', lg: '386px' }}
+            >
               <Text
-                fontSize={{ base: '8px', md: '' }}
+                fontSize={{ base: '8px', md: '24px' }}
                 fontWeight="700"
-                lineHeight="10px"
+                lineHeight={{ base: '10px', md: '29.52px' }}
                 color="#000F24"
               >
                 Introducton to user research in UX Design
               </Text>
             </Box>
-            <Flex mt="4px" justifyContent="space-between">
+            <Flex
+              mt={{ base: '4px', md: '18px' }}
+              justifyContent="space-between"
+            >
               <Text
                 display="flex"
                 gap="4px"
                 alignItems="center"
                 color="#A1A1A1"
-                fontSize={{ base: '4px' }}
+                fontFamily="Satoshi"
+                fontSize={{ base: '4px', md: '16px' }}
               >
-                <Image display="inline" src={schedule} alt="schedule" /> 23hrs
-                50mins
+                <Image
+                  w={{ md: '20px' }}
+                  h={{ md: '20px' }}
+                  display="inline"
+                  src={schedule}
+                  alt="schedule"
+                />{' '}
+                23hrs 50mins
               </Text>
 
               <Text
@@ -156,9 +178,17 @@ const Browse = () => {
                 gap="4px"
                 alignItems="center"
                 color="#A1A1A1"
-                fontSize={{ base: '4px' }}
+                fontSize={{ base: '4px', md: '16px' }}
+                fontFamily="Satoshi"
               >
-                <Image display="inline" src={book} alt="schedule" /> 15 Lessons
+                <Image
+                  display="inline"
+                  w={{ md: '22px' }}
+                  h={{ md: '16px' }}
+                  src={book}
+                  alt="schedule"
+                />{' '}
+                15 Lessons
               </Text>
             </Flex>
             <Flex
@@ -167,58 +197,92 @@ const Browse = () => {
               justifyContent="space-between"
             >
               <Flex gap={2} alignItems="center">
-                <Image src={leonard} alt="leonard" />
-                <Text fontSize="6px" fontFamily="Satoshi" fontWeight="700">
+                <Image
+                  src={leonard}
+                  w={{ md: '40px' }}
+                  h={{ md: '40px' }}
+                  alt="leonard"
+                />
+                <Text
+                  fontSize={{ base: '6px', md: '16px' }}
+                  fontFamily="Satoshi"
+                  fontWeight="700"
+                >
                   Leonard Victor
                 </Text>
               </Flex>
-              <Text color="#004DB3" fontWeight="700" fontSize="8px">
+              <Text
+                color="#004DB3"
+                fontWeight="700"
+                fontSize={{ base: '8px', md: '20px' }}
+              >
                 $15.00
               </Text>
             </Flex>
           </CardBody>
         </Card>
         <Card>
-          <CardHeader pb="3px">
+          <CardHeader pb={{ base: '3px', md: '15.3' }}>
             <Image bg="rgba(30, 93, 206, 0.2)" src={audience} alt="audience" />
           </CardHeader>
           <CardBody pt="0">
             <Flex justifyContent="space-between">
               <Button
-                w={{ base: '29px', md: '' }}
+                w={{ base: '29px', md: '79px' }}
                 fontWeight="700"
-                h={{ base: '9px' }}
+                h={{ base: '9px', md: '24px' }}
                 fontSize={{ base: '4px', md: '8px' }}
                 color="#1E5DCE"
+                borderRadius="full"
               >
                 Marketing
               </Button>
-              <Text color="#A1A1A1" fontSize={{ base: '4px' }}>
+              <Text color="#A1A1A1" fontSize={{ base: '4px', md: '12px' }}>
                 {' '}
-                4.7k <Image display={'inline'} src={grade} alt="grade" />{' '}
+                4.7k{' '}
+                <Image
+                  w={{ md: '13.3' }}
+                  h={{ md: '12.7' }}
+                  display={'inline'}
+                  src={grade}
+                  alt="grade"
+                />
                 (32.7k+)
               </Text>
             </Flex>
-            <Box mt="10px" w="155px">
+            <Box
+              mt={{ base: '10px', md: '28px' }}
+              w={{ base: '155px', md: '200px', lg: '386px' }}
+            >
               <Text
-                fontSize={{ base: '8px', md: '' }}
+                fontSize={{ base: '8px', md: '24px' }}
                 fontWeight="700"
-                lineHeight="10px"
+                lineHeight={{ base: '10px', md: '29.52px' }}
                 color="#000F24"
               >
                 Introducton to new marketing audience
               </Text>
             </Box>
-            <Flex mt="4px" justifyContent="space-between">
+            <Flex
+              mt={{ base: '4px', md: '18px' }}
+              justifyContent="space-between"
+            >
               <Text
                 display="flex"
                 gap="4px"
                 alignItems="center"
                 color="#A1A1A1"
-                fontSize={{ base: '4px' }}
+                fontFamily="Satoshi"
+                fontSize={{ base: '4px', md: '16px' }}
               >
-                <Image display="inline" src={schedule} alt="schedule" /> 22hrs
-                30mins
+                <Image
+                  w={{ md: '20px' }}
+                  h={{ md: '20px' }}
+                  display="inline"
+                  src={schedule}
+                  alt="schedule"
+                />{' '}
+                23hrs 30mins
               </Text>
 
               <Text
@@ -226,9 +290,17 @@ const Browse = () => {
                 gap="4px"
                 alignItems="center"
                 color="#A1A1A1"
-                fontSize={{ base: '4px' }}
+                fontSize={{ base: '4px', md: '16px' }}
+                fontFamily="Satoshi"
               >
-                <Image display="inline" src={book} alt="schedule" /> 22 Lessons
+                <Image
+                  display="inline"
+                  w={{ md: '22px' }}
+                  h={{ md: '16px' }}
+                  src={book}
+                  alt="schedule"
+                />{' '}
+                22 Lessons
               </Text>
             </Flex>
             <Flex
@@ -237,58 +309,92 @@ const Browse = () => {
               justifyContent="space-between"
             >
               <Flex gap={2} alignItems="center">
-                <Image src={jeffery} alt="jeffery" />
-                <Text fontSize="6px" fontFamily="Satoshi" fontWeight="700">
+                <Image
+                  src={jeffery}
+                  w={{ md: '40px' }}
+                  h={{ md: '40px' }}
+                  alt="jeffery"
+                />
+                <Text
+                  fontSize={{ base: '6px', md: '16px' }}
+                  fontFamily="Satoshi"
+                  fontWeight="700"
+                >
                   Jeffery Williams
                 </Text>
               </Flex>
-              <Text color="#004DB3" fontWeight="700" fontSize="8px">
+              <Text
+                color="#004DB3"
+                fontWeight="700"
+                fontSize={{ base: '8px', md: '20px' }}
+              >
                 $32.00
               </Text>
             </Flex>
           </CardBody>
         </Card>
         <Card>
-          <CardHeader pb="3px">
+          <CardHeader pb={{ base: '3px', md: '15.3' }}>
             <Image bg="rgba(30, 93, 206, 0.2)" src={discuss} alt="discuss" />
           </CardHeader>
           <CardBody pt="0">
             <Flex justifyContent="space-between">
               <Button
-                w={{ base: '29px', md: '' }}
+                w={{ base: '29px', md: '79px' }}
                 fontWeight="700"
-                h={{ base: '9px' }}
+                h={{ base: '9px', md: '24px' }}
                 fontSize={{ base: '4px', md: '8px' }}
                 color="#1E5DCE"
+                borderRadius="full"
               >
                 Development
               </Button>
-              <Text color="#A1A1A1" fontSize={{ base: '4px' }}>
+              <Text color="#A1A1A1" fontSize={{ base: '4px', md: '12px' }}>
                 {' '}
-                4.7k <Image display={'inline'} src={grade} alt="grade" />{' '}
+                4.7k{' '}
+                <Image
+                  w={{ md: '13.3' }}
+                  h={{ md: '12.7' }}
+                  display={'inline'}
+                  src={grade}
+                  alt="grade"
+                />
                 (32.7k+)
               </Text>
             </Flex>
-            <Box mt="10px" w="155px">
+            <Box
+              mt={{ base: '10px', md: '28px' }}
+              w={{ base: '155px', md: '200px', lg: '386px' }}
+            >
               <Text
-                fontSize={{ base: '8px', md: '' }}
+                fontSize={{ base: '8px', md: '24px' }}
                 fontWeight="700"
-                lineHeight="10px"
+                lineHeight={{ base: '10px', md: '29.52px' }}
                 color="#000F24"
               >
-                Introducton to HTML, CSS and bootstrap
+                Introducton to HTML, CSS & bootsrap
               </Text>
             </Box>
-            <Flex mt="4px" justifyContent="space-between">
+            <Flex
+              mt={{ base: '4px', md: '18px' }}
+              justifyContent="space-between"
+            >
               <Text
                 display="flex"
                 gap="4px"
                 alignItems="center"
                 color="#A1A1A1"
-                fontSize={{ base: '4px' }}
+                fontFamily="Satoshi"
+                fontSize={{ base: '4px', md: '16px' }}
               >
-                <Image display="inline" src={schedule} alt="schedule" /> 45hrs
-                50mins
+                <Image
+                  w={{ md: '20px' }}
+                  h={{ md: '20px' }}
+                  display="inline"
+                  src={schedule}
+                  alt="schedule"
+                />{' '}
+                45hrs 50mins
               </Text>
 
               <Text
@@ -296,9 +402,17 @@ const Browse = () => {
                 gap="4px"
                 alignItems="center"
                 color="#A1A1A1"
-                fontSize={{ base: '4px' }}
+                fontSize={{ base: '4px', md: '16px' }}
+                fontFamily="Satoshi"
               >
-                <Image display="inline" src={book} alt="schedule" /> 55 Lessons
+                <Image
+                  display="inline"
+                  w={{ md: '22px' }}
+                  h={{ md: '16px' }}
+                  src={book}
+                  alt="schedule"
+                />{' '}
+                55 Lessons
               </Text>
             </Flex>
             <Flex
@@ -307,58 +421,92 @@ const Browse = () => {
               justifyContent="space-between"
             >
               <Flex gap={2} alignItems="center">
-                <Image src={claretta} alt="leonard" />
-                <Text fontSize="6px" fontFamily="Satoshi" fontWeight="700">
+                <Image
+                  src={claretta}
+                  w={{ md: '40px' }}
+                  h={{ md: '40px' }}
+                  alt="claretta"
+                />
+                <Text
+                  fontSize={{ base: '6px', md: '16px' }}
+                  fontFamily="Satoshi"
+                  fontWeight="700"
+                >
                   Claretta Mason
                 </Text>
               </Flex>
-              <Text color="#004DB3" fontWeight="700" fontSize="8px">
+              <Text
+                color="#004DB3"
+                fontWeight="700"
+                fontSize={{ base: '8px', md: '20px' }}
+              >
                 $55.00
               </Text>
             </Flex>
           </CardBody>
         </Card>
         <Card>
-          <CardHeader pb="3px">
+          <CardHeader pb={{ base: '3px', md: '15.3' }}>
             <Image bg="rgba(30, 93, 206, 0.2)" src={screen} alt="screen" />
           </CardHeader>
           <CardBody pt="0">
             <Flex justifyContent="space-between">
               <Button
-                w={{ base: '29px', md: '' }}
+                w={{ base: '29px', md: '79px' }}
                 fontWeight="700"
-                h={{ base: '9px' }}
+                h={{ base: '9px', md: '24px' }}
                 fontSize={{ base: '4px', md: '8px' }}
                 color="#1E5DCE"
+                borderRadius="full"
               >
                 Development
               </Button>
-              <Text color="#A1A1A1" fontSize={{ base: '4px' }}>
+              <Text color="#A1A1A1" fontSize={{ base: '4px', md: '12px' }}>
                 {' '}
-                4.7k <Image display={'inline'} src={grade} alt="grade" />{' '}
+                4.7k{' '}
+                <Image
+                  w={{ md: '13.3' }}
+                  h={{ md: '12.7' }}
+                  display={'inline'}
+                  src={grade}
+                  alt="grade"
+                />
                 (32.7k+)
               </Text>
             </Flex>
-            <Box mt="10px" w="155px">
+            <Box
+              mt={{ base: '10px', md: '28px' }}
+              w={{ base: '155px', md: '200px', lg: '386px' }}
+            >
               <Text
-                fontSize={{ base: '8px', md: '' }}
+                fontSize={{ base: '8px', md: '24px' }}
                 fontWeight="700"
-                lineHeight="10px"
+                lineHeight={{ base: '10px', md: '29.52px' }}
                 color="#000F24"
               >
-                Introducton to Javascript, Git and Github
+                Introducton to javascript, Git & Github
               </Text>
             </Box>
-            <Flex mt="4px" justifyContent="space-between">
+            <Flex
+              mt={{ base: '4px', md: '18px' }}
+              justifyContent="space-between"
+            >
               <Text
                 display="flex"
                 gap="4px"
                 alignItems="center"
                 color="#A1A1A1"
-                fontSize={{ base: '4px' }}
+                fontFamily="Satoshi"
+                fontSize={{ base: '4px', md: '16px' }}
               >
-                <Image display="inline" src={schedule} alt="schedule" /> 30hrs
-                50mins
+                <Image
+                  w={{ md: '20px' }}
+                  h={{ md: '20px' }}
+                  display="inline"
+                  src={schedule}
+                  alt="schedule"
+                />{' '}
+                30hrs 50mins
               </Text>
 
               <Text
@@ -366,9 +514,17 @@ const Browse = () => {
                 gap="4px"
                 alignItems="center"
                 color="#A1A1A1"
-                fontSize={{ base: '4px' }}
+                fontSize={{ base: '4px', md: '16px' }}
+                fontFamily="Satoshi"
               >
-                <Image display="inline" src={book} alt="schedule" /> 22 Lessons
+                <Image
+                  display="inline"
+                  w={{ md: '22px' }}
+                  h={{ md: '16px' }}
+                  src={book}
+                  alt="schedule"
+                />{' '}
+                22 Lessons
               </Text>
             </Flex>
             <Flex
@@ -377,58 +533,92 @@ const Browse = () => {
               justifyContent="space-between"
             >
               <Flex gap={2} alignItems="center">
-                <Image src={jessica} alt="leonard" />
-                <Text fontSize="6px" fontFamily="Satoshi" fontWeight="700">
+                <Image
+                  src={jessica}
+                  w={{ md: '40px' }}
+                  h={{ md: '40px' }}
+                  alt="jessica"
+                />
+                <Text
+                  fontSize={{ base: '6px', md: '16px' }}
+                  fontFamily="Satoshi"
+                  fontWeight="700"
+                >
                   Jessica Duke
                 </Text>
               </Flex>
-              <Text color="#004DB3" fontWeight="700" fontSize="8px">
+              <Text
+                color="#004DB3"
+                fontWeight="700"
+                fontSize={{ base: '8px', md: '20px' }}
+              >
                 $45.00
               </Text>
             </Flex>
           </CardBody>
         </Card>
         <Card>
-          <CardHeader pb="3px">
+          <CardHeader pb={{ base: '3px', md: '15.3' }}>
             <Image bg="rgba(30, 93, 206, 0.2)" src={table} alt="table" />
           </CardHeader>
           <CardBody pt="0">
             <Flex justifyContent="space-between">
               <Button
-                w={{ base: '29px', md: '' }}
+                w={{ base: '29px', md: '79px' }}
                 fontWeight="700"
-                h={{ base: '9px' }}
+                h={{ base: '9px', md: '24px' }}
                 fontSize={{ base: '4px', md: '8px' }}
                 color="#1E5DCE"
+                borderRadius="full"
               >
                 Marketing
               </Button>
-              <Text color="#A1A1A1" fontSize={{ base: '4px' }}>
+              <Text color="#A1A1A1" fontSize={{ base: '4px', md: '12px' }}>
                 {' '}
-                4.7k <Image display={'inline'} src={grade} alt="grade" />{' '}
+                4.7k{' '}
+                <Image
+                  w={{ md: '13.3' }}
+                  h={{ md: '12.7' }}
+                  display={'inline'}
+                  src={grade}
+                  alt="grade"
+                />
                 (32.7k+)
               </Text>
             </Flex>
-            <Box mt="10px" w="155px">
+            <Box
+              mt={{ base: '10px', md: '28px' }}
+              w={{ base: '155px', md: '200px', lg: '386px' }}
+            >
               <Text
-                fontSize={{ base: '8px', md: '' }}
+                fontSize={{ base: '8px', md: '24px' }}
                 fontWeight="700"
-                lineHeight="10px"
+                lineHeight={{ base: '10px', md: '29.52px' }}
                 color="#000F24"
               >
                 Introducton to outroom marketing analysis
               </Text>
             </Box>
-            <Flex mt="4px" justifyContent="space-between">
+            <Flex
+              mt={{ base: '4px', md: '18px' }}
+              justifyContent="space-between"
+            >
               <Text
                 display="flex"
                 gap="4px"
                 alignItems="center"
                 color="#A1A1A1"
-                fontSize={{ base: '4px' }}
+                fontFamily="Satoshi"
+                fontSize={{ base: '4px', md: '16px' }}
               >
-                <Image display="inline" src={schedule} alt="schedule" /> 33hrs
-                50mins
+                <Image
+                  w={{ md: '20px' }}
+                  h={{ md: '20px' }}
+                  display="inline"
+                  src={schedule}
+                  alt="schedule"
+                />{' '}
+                33hrs 50mins
               </Text>
 
               <Text
@@ -436,9 +626,17 @@ const Browse = () => {
                 gap="4px"
                 alignItems="center"
                 color="#A1A1A1"
-                fontSize={{ base: '4px' }}
+                fontSize={{ base: '4px', md: '16px' }}
+                fontFamily="Satoshi"
               >
-                <Image display="inline" src={book} alt="schedule" /> 26 Lessons
+                <Image
+                  display="inline"
+                  w={{ md: '22px' }}
+                  h={{ md: '16px' }}
+                  src={book}
+                  alt="schedule"
+                />{' '}
+                26 Lessons
               </Text>
             </Flex>
             <Flex
@@ -447,58 +645,92 @@ const Browse = () => {
               justifyContent="space-between"
             >
               <Flex gap={2} alignItems="center">
-                <Image src={samuel} alt="samuel" />
-                <Text fontSize="6px" fontFamily="Satoshi" fontWeight="700">
+                <Image
+                  src={samuel}
+                  w={{ md: '40px' }}
+                  h={{ md: '40px' }}
+                  alt="samuel"
+                />
+                <Text
+                  fontSize={{ base: '6px', md: '16px' }}
+                  fontFamily="Satoshi"
+                  fontWeight="700"
+                >
                   Samuel Jacob
                 </Text>
               </Flex>
-              <Text color="#004DB3" fontWeight="700" fontSize="8px">
+              <Text
+                color="#004DB3"
+                fontWeight="700"
+                fontSize={{ base: '8px', md: '20px' }}
+              >
                 $25.00
               </Text>
             </Flex>
           </CardBody>
         </Card>
         <Card>
-          <CardHeader pb="3px">
+          <CardHeader pb={{ base: '3px', md: '15.3' }}>
             <Image bg="rgba(30, 93, 206, 0.2)" src={laptop} alt="laptop" />
           </CardHeader>
           <CardBody pt="0">
             <Flex justifyContent="space-between">
               <Button
-                w={{ base: '29px', md: '' }}
+                w={{ base: '29px', md: '79px' }}
                 fontWeight="700"
-                h={{ base: '9px' }}
+                h={{ base: '9px', md: '24px' }}
                 fontSize={{ base: '4px', md: '8px' }}
                 color="#1E5DCE"
+                borderRadius="full"
               >
-                Design
+                Marketing
               </Button>
-              <Text color="#A1A1A1" fontSize={{ base: '4px' }}>
+              <Text color="#A1A1A1" fontSize={{ base: '4px', md: '12px' }}>
                 {' '}
-                4.7k <Image display={'inline'} src={grade} alt="grade" />{' '}
+                4.7k{' '}
+                <Image
+                  w={{ md: '13.3' }}
+                  h={{ md: '12.7' }}
+                  display={'inline'}
+                  src={grade}
+                  alt="grade"
+                />
                 (32.7k+)
               </Text>
             </Flex>
-            <Box mt="10px" w="155px">
+            <Box
+              mt={{ base: '10px', md: '28px' }}
+              w={{ base: '155px', md: '200px', lg: '386px' }}
+            >
               <Text
-                fontSize={{ base: '8px', md: '' }}
+                fontSize={{ base: '8px', md: '24px' }}
                 fontWeight="700"
-                lineHeight="10px"
+                lineHeight={{ base: '10px', md: '29.52px' }}
                 color="#000F24"
               >
                 Introducton to live marketing analysis
               </Text>
             </Box>
-            <Flex mt="4px" justifyContent="space-between">
+            <Flex
+              mt={{ base: '4px', md: '18px' }}
+              justifyContent="space-between"
+            >
               <Text
                 display="flex"
                 gap="4px"
                 alignItems="center"
                 color="#A1A1A1"
-                fontSize={{ base: '4px' }}
+                fontFamily="Satoshi"
+                fontSize={{ base: '4px', md: '16px' }}
               >
-                <Image display="inline" src={schedule} alt="schedule" /> 10hrs
-                50mins
+                <Image
+                  w={{ md: '20px' }}
+                  h={{ md: '20px' }}
+                  display="inline"
+                  src={schedule}
+                  alt="schedule"
+                />{' '}
+                30hrs 50mins
               </Text>
 
               <Text
@@ -506,9 +738,17 @@ const Browse = () => {
                 gap="4px"
                 alignItems="center"
                 color="#A1A1A1"
-                fontSize={{ base: '4px' }}
+                fontSize={{ base: '4px', md: '16px' }}
+                fontFamily="Satoshi"
               >
-                <Image display="inline" src={book} alt="schedule" /> 32 Lessons
+                <Image
+                  display="inline"
+                  w={{ md: '22px' }}
+                  h={{ md: '16px' }}
+                  src={book}
+                  alt="schedule"
+                />{' '}
+                32 Lessons
               </Text>
             </Flex>
             <Flex
@@ -517,18 +757,55 @@ const Browse = () => {
               justifyContent="space-between"
             >
               <Flex gap={2} alignItems="center">
-                <Image src={adam} alt="adam" />
-                <Text fontSize="6px" fontFamily="Satoshi" fontWeight="700">
+                <Image
+                  src={adam}
+                  w={{ md: '40px' }}
+                  h={{ md: '40px' }}
+                  alt="adam"
+                />
+                <Text
+                  fontSize={{ base: '6px', md: '16px' }}
+                  fontFamily="Satoshi"
+                  fontWeight="700"
+                >
                   Adam Smith
                 </Text>
               </Flex>
-              <Text color="#004DB3" fontWeight="700" fontSize="8px">
+              <Text
+                color="#004DB3"
+                fontWeight="700"
+                fontSize={{ base: '8px', md: '20px' }}
+              >
                 $25.00
               </Text>
             </Flex>
           </CardBody>
         </Card>
       </Grid>
+      <GridItem pt="24px" m="auto">
+        <Button
+          bg="#004DB3"
+          display={{ base: 'block', md: 'none' }}
+          w="100px"
+          h="27px"
+          borderRadius="2px"
+          color="white"
+          fontSize={{ base: '8px' }}
+        >
+          View All Courses
+        </Button>
+        <Button
+          bg="#004DB3"
+          borderRadius="4px"
+          display={{ base: 'none', md: 'block' }}
+          w={{ md: '209px' }}
+          h={{ md: '54px' }}
+          color="white"
+          fontSize={{ md: '16px' }}
+        >
+          Explore All Courses
+        </Button>
+      </GridItem>
     </Grid>
   );
 };

@@ -5,6 +5,7 @@ import Affiliates from './components/Affiliates';
 import Course from './components/Course';
 import Courses from './components/Courses';
 import Browse from './components/Browse';
+import Testimony from './components/Testimony';
 
 Text.defaultProps,
   (Heading.defaultProps = {
@@ -20,6 +21,7 @@ function App() {
       <Courses />
       <Course />
       <Browse />
+      <Testimony />
     </Box>
   );
 }

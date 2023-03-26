@@ -172,7 +172,7 @@ const Courses = () => {
           </Flex>
         </Flex>
       </GridItem>
-      <GridItem bg='#F8F9FC' w='100%'>
+      <GridItem bg='#F8F9FC' w='100%' overflow={{md: 'hidden', lg: 'unset'}}>
         <Box position='relative' mt={{lg: '66px'}} w={{ base: '400px', lg:'500px' }} h='300px' m='auto'>
           <Image
             src={stars}
