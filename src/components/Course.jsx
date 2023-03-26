@@ -25,7 +25,7 @@ const Course = () => {
       as="main"
       bg="#F8F9FC"
       w="100%"
-      pb='30px'
+      pb='80px'
       gap="10px"
       pt={{ base: '50px', md: '0' }}
       templateColumns={{ md: 'repeat(2, 1fr)' }}
