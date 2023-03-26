@@ -51,8 +51,8 @@ const Browse = () => {
         </Heading>
         <Text
           mt="8px"
-          mx='auto'
-          w={{base: '70%', lg: '500px'}}
+          mx="auto"
+          w={{ base: '70%', lg: '500px' }}
           lineHeight="200%"
           color="#A1A1A1"
           textAlign="center"
@@ -138,10 +138,7 @@ const Browse = () => {
                 (32.7k+)
               </Text>
             </Flex>
-            <Box
-              mt={{ base: '10px', md: '28px' }}
-              w={{ base: '155px', md: '200px', lg: '386px' }}
-            >
+            <Box mt={{ base: '10px', md: '28px' }} w="90%">
               <Text
                 fontSize={{ base: '8px', md: '24px' }}
                 fontWeight="700"
@@ -250,10 +247,7 @@ const Browse = () => {
                 (32.7k+)
               </Text>
             </Flex>
-            <Box
-              mt={{ base: '10px', md: '28px' }}
-              w={{ base: '155px', md: '200px', lg: '386px' }}
-            >
+            <Box mt={{ base: '10px', md: '28px' }} w="90%">
               <Text
                 fontSize={{ base: '8px', md: '24px' }}
                 fontWeight="700"
@@ -362,10 +356,7 @@ const Browse = () => {
                 (32.7k+)
               </Text>
             </Flex>
-            <Box
-              mt={{ base: '10px', md: '28px' }}
-              w={{ base: '155px', md: '200px', lg: '386px' }}
-            >
+            <Box mt={{ base: '10px', md: '28px' }} w="90%">
               <Text
                 fontSize={{ base: '8px', md: '24px' }}
                 fontWeight="700"
@@ -474,10 +465,7 @@ const Browse = () => {
                 (32.7k+)
               </Text>
             </Flex>
-            <Box
-              mt={{ base: '10px', md: '28px' }}
-              w={{ base: '155px', md: '200px', lg: '386px' }}
-            >
+            <Box mt={{ base: '10px', md: '28px' }} w="90%">
               <Text
                 fontSize={{ base: '8px', md: '24px' }}
                 fontWeight="700"
@@ -586,10 +574,7 @@ const Browse = () => {
                 (32.7k+)
               </Text>
             </Flex>
-            <Box
-              mt={{ base: '10px', md: '28px' }}
-              w={{ base: '155px', md: '200px', lg: '386px' }}
-            >
+            <Box mt={{ base: '10px', md: '28px' }} w="90%">
               <Text
                 fontSize={{ base: '8px', md: '24px' }}
                 fontWeight="700"
@@ -698,10 +683,7 @@ const Browse = () => {
                 (32.7k+)
               </Text>
             </Flex>
-            <Box
-              mt={{ base: '10px', md: '28px' }}
-              w={{ base: '155px', md: '200px', lg: '386px' }}
-            >
+            <Box mt={{ base: '10px', md: '28px' }} w="90%">
               <Text
                 fontSize={{ base: '8px', md: '24px' }}
                 fontWeight="700"

@@ -16,7 +16,7 @@ import pagination from '../assets/pagination.svg';
 
 const Testimony = () => {
   return (
-    <Box bg="#F8F9FC" h={{ base: '430px', md: '500px', lg: '600px' }}>
+    <Box bg="#F8F9FC" pb='40px'>
       <Box pt={{ base: '70px', md: '135' }} m="auto">
         <Heading textAlign="center">What Our Clients Are Saying</Heading>
         <Text
@@ -36,7 +36,6 @@ const Testimony = () => {
       </Box>
       <Box
         as="section"
-        h={{ base: '200px', md: '200px', lg: '350px' }}
         w="full"
         overflow="hidden"
       >
@@ -50,7 +49,6 @@ const Testimony = () => {
             top={{ base: '-40px', lg: '-10px' }}
             left={{ base: '-100px', lg: '-200px' }}
             shadow="none"
-            // mt={{ base: '56px', md: '48px' }}
           >
             <CardBody
               bg="#FFF"

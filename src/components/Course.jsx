@@ -25,10 +25,9 @@ const Course = () => {
       as="main"
       bg="#F8F9FC"
       w="100%"
-      h={{ base: '', md: '600px' }}
+      pb='30px'
       gap="10px"
       pt={{ base: '50px', md: '0' }}
-      templateRows={{ base: 'repeat(2, 1fr)', md: 'none' }}
       templateColumns={{ md: 'repeat(2, 1fr)' }}
     >
       <GridItem bg="#F8F9FC" w="93%" m="auto">
