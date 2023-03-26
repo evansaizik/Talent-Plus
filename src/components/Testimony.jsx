@@ -16,7 +16,7 @@ import pagination from '../assets/pagination.svg';
 
 const Testimony = () => {
   return (
-    <Box bg="#F8F9FC" h={{ base: '430px', md: '500px', lg: '500px' }}>
+    <Box bg="#F8F9FC" h={{ base: '430px', md: '500px', lg: '600px' }}>
       <Box pt={{ base: '70px', md: '135' }} m="auto">
         <Heading textAlign="center">What Our Clients Are Saying</Heading>
         <Text
@@ -43,7 +43,7 @@ const Testimony = () => {
         <Flex
           mt={{ base: '56px', md: '48px' }}
           gap={{ base: '16px', lg: '24px' }}
-          position="relative"
+          position="relative" h={{base: '180px', lg: '250px'}}
         >
           <Card
             position="absolute"
@@ -258,13 +258,13 @@ const Testimony = () => {
             </CardFooter>
           </Card>
         </Flex>
+        <Image
+          pt={{ base: '10px', lg: '0px' }}
+          m="auto"
+          src={pagination}
+          alt="pagination"
+        />
       </Box>
-      <Image
-        pt={{ base: '10px', lg: '40px' }}
-        m="auto"
-        src={pagination}
-        alt="pagination"
-      />
     </Box>
   );
 };
