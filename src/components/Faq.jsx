@@ -27,7 +27,7 @@ const Faq = () => {
         alt="icons"
       />
       <Image src={squiggly} alt="icons" position="absolute" top="50%" />
-      <Box mt={{ base: '40px' }} w={{ base: '93%', lg: '65%' }} mx="auto">
+      <Box pt={{ base: '40px' }} w={{ base: '93%', lg: '65%' }} mx="auto">
         <Heading
           fontSize={{ base: '24px', lg: '56px' }}
           lineHeight={{ base: '29.5px', lg: '68.9px' }}
