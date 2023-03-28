@@ -88,8 +88,20 @@ const Course = () => {
               </Card>
             );
           })}
-          <Image src={purple} position='relative' alt='icons' left='220%' bottom='-80%' />
-          <Image src={triangle} position='relative' alt='icons'left='-360%' bottom='255%' />
+          <Image
+            src={purple}
+            position="relative"
+            alt="icons"
+            left="220%"
+            bottom="-80%"
+          />
+          <Image
+            src={triangle}
+            position="relative"
+            alt="icons"
+            left="-360%"
+            bottom="255%"
+          />
         </Grid>
       </GridItem>
     </Grid>

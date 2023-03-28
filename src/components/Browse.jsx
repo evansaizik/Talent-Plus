@@ -13,7 +13,7 @@ import {
   CardBody,
 } from '@chakra-ui/react';
 import courses from '../utils/courses';
-import splash from '../assets/splash.svg'
+import splash from '../assets/splash.svg';
 
 Text.defaultProps = {
   fontFamily: 'Clash Display',
@@ -23,7 +23,7 @@ const Browse = () => {
   return (
     <Grid
       w="100%"
-      position='relative'
+      position="relative"
       templateColumns="repeat(1fr)"
       bg="#F8F9FC"
       justifyContent="center"
@@ -86,7 +86,7 @@ const Browse = () => {
           Marketing
         </Button>
       </HStack>
-      <Image src={splash} position='absolute' left='10%' top='9%' zIndex={1} />
+      <Image src={splash} position="absolute" left="10%" top="9%" zIndex={1} />
       <Grid
         w={{ base: '93%' }}
         gap={{ base: 2, md: 4 }}
