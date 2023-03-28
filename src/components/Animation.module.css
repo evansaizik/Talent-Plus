@@ -1,0 +1,4 @@
+.sliding {
+  transform: translateX(-100%);
+  transition: all 1s;
+}
