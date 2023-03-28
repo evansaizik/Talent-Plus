@@ -92,7 +92,7 @@ const Course = () => {
             src={purple}
             position="relative"
             alt="icons"
-            left="220%"
+            left={{ base: '100%', lg: '220%' }}
             bottom="-80%"
           />
           <Image
