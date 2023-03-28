@@ -6,14 +6,19 @@ import {
   AccordionPanel,
   Box,
   Heading,
+  Image,
   Text,
 } from '@chakra-ui/react';
 import { MinusIcon, PlusIcon } from '@radix-ui/react-icons';
 import faqs from '../utils/faq';
+import purple from '../assets/purple.svg'
+import squiggly from '../assets/squiggly.svg'
 
 const Faq = () => {
   return (
-    <Box as="section" bg="#F8F9FC" pb="83px">
+    <Box as="section" bg="#F8F9FC" pb="83px" position='relative'>
+      <Image src={purple} w='24px' h='24px' position='absolute' right='10%' top='5%' alt='icons' />
+      <Image src={squiggly} alt='icons' position='absolute' top='50%' />
       <Box mt={{ base: '40px' }} w={{ base: '93%', lg: '65%' }} mx="auto">
         <Heading
           fontSize={{ base: '24px', lg: '56px' }}

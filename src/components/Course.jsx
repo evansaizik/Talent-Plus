@@ -10,6 +10,8 @@ import {
   CardBody,
 } from '@chakra-ui/react';
 import boy from '../assets/boy.svg';
+import triangle from '../assets/triangle.svg';
+import purple from '../assets/purple.svg';
 import offers from '../utils/offers';
 
 Text.defaultProps = {
@@ -35,8 +37,8 @@ const Course = () => {
           <Text
             textAlign={{ base: 'center', md: 'start' }}
             mt="8px"
-            mx='auto'
-            w={{base: '70%', lg: '100%'}}
+            mx="auto"
+            w={{ base: '70%', lg: '100%' }}
             fontSize={{ base: '8px', md: '16px' }}
             fontWeight="500"
             color="#A1A1A1"
@@ -60,7 +62,7 @@ const Course = () => {
           templateColumns="repeat(2, 1fr)"
           alignItems={{ base: 'center', md: 'flex-start' }}
         >
-          {offers.map(offer => {
+          {offers.map((offer) => {
             return (
               <Card key={offer.id} shadow="none" w={{ base: '100%' }}>
                 <CardHeader pb="0">
@@ -86,6 +88,8 @@ const Course = () => {
               </Card>
             );
           })}
+          <Image src={purple} position='relative' alt='icons' left='220%' bottom='-80%' />
+          <Image src={triangle} position='relative' alt='icons'left='-360%' bottom='255%' />
         </Grid>
       </GridItem>
     </Grid>

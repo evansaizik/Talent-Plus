@@ -16,6 +16,8 @@ import speaker from '../assets/speaker.svg';
 import bigImage from '../assets/bigImage.svg';
 import smallImage from '../assets/smallImage.svg';
 import stars from '../assets/stars.svg';
+import purple from '../assets/purple.svg';
+import squiggly from '../assets/squiggly.svg';
 
 const Courses = () => {
   return (
@@ -186,6 +188,20 @@ const Courses = () => {
             position="absolute"
             right="10px"
             bottom="30px"
+          />
+          <Image
+            src={purple}
+            alt="purple"
+            position="absolute"
+            right="32%"
+            bottom="-68%"
+          />
+          <Image
+            src={squiggly}
+            alt="squiggly"
+            position="absolute"
+            right="50%"
+            bottom="-90%"
           />
           <Image
             w={{ base: '', md: '330px', lg: '500px' }}

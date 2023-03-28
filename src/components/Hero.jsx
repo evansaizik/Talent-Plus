@@ -5,6 +5,9 @@ import hero from '../assets/hero.svg';
 import vsc from '../assets/vsc.svg';
 import wordpress from '../assets/wordpress.svg';
 import figma from '../assets/figma.svg';
+import tri from '../assets/tri.svg'
+import greencircle from '../assets/greencircle.svg'
+import dot from '../assets/dot.svg'
 
 const Hero = () => {
   return (
@@ -23,6 +26,9 @@ const Hero = () => {
         left={{ md: '-50px' }}
         transform={{ md: 'rotate(-60deg)' }}
       />
+      <Image src={tri} color='yellow' position="absolute" top="160px" right="20px" />
+      <Image src={dot} position="absolute" bottom="90px" left="54px" />
+      <Image src={greencircle} position="absolute" top="150px" left="60px" />
       <Image src={wordpress} position="absolute" bottom="35px" right="0px" />
       <Image src={figma} position="absolute" top="259px" left="18px" />
       <Image src={vsc} position="absolute" right="20px" top="40px" />
