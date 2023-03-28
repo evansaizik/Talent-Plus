@@ -8,7 +8,8 @@ import {
   Heading,
   Text,
 } from '@chakra-ui/react';
-import { PlusIcon } from '@radix-ui/react-icons';
+import { MinusIcon, PlusIcon } from '@radix-ui/react-icons';
+import faqs from '../utils/faq';
 
 const Faq = () => {
   return (
@@ -35,209 +36,45 @@ const Faq = () => {
           Standard Definition. While There's No Standard Meaning For High
           Definition, Generally Any Standard Video Image
         </Text>
-        <Accordion defaultIndex={[1]} allowMultiple>
-          <AccordionItem
-            pt={{ base: '24px', lg: '32px' }}
-            borderTop="none"
-            borderBottomColor="#EAEAEA"
-            borderBottom={{ base: '12.6px', lg: '32px' }}
-          >
-            <AccordionButton
-              fontWeight="900"
-              color="#004DB3"
-              fontFamily="Satoshi"
-              fontSize={{ base: '14px', lg: '24px' }}
-              lineHeight={{ base: '19px', lg: '32.4px' }}
-            >
-              <Box as="span" flex="1" textAlign="left">
-                Is there a free trial available?
-              </Box>
-              <AccordionIcon as={PlusIcon} />
-            </AccordionButton>
-            <AccordionPanel
-              pb={4}
-              color={{ base: '#A1A1A1', lg: '#A2AA2A2' }}
-              fontFamily="Satoshi"
-              fontWeight="500"
-              fontSize={{ base: '8px', lg: '16px' }}
-              lineHeight={{ base: '16px', lg: '26px' }}
-            >
-              High-Definition Video is Video Of Higher Resolution And Quality
-              Than Standard Definition. build Your Future With Our Quality
-              Education. The Best And Largest All-In-One Online Tutoring
-              Platform In The World definition.
-            </AccordionPanel>
-          </AccordionItem>
-        </Accordion>
-        <Accordion defaultIndex={[1]} allowMultiple>
-          <AccordionItem
-            pt={{ base: '24px', lg: '32px' }}
-            borderTop="none"
-            borderBottomColor="#EAEAEA"
-            borderBottom={{ base: '12.6px', lg: '32px' }}
-          >
-            <AccordionButton
-              fontWeight="900"
-              color="#000F24"
-              fontFamily="Satoshi"
-              fontSize={{ base: '14px', lg: '24px' }}
-              lineHeight={{ base: '19px', lg: '32.4px' }}
-            >
-              <Box as="span" flex="1" textAlign="left">
-                Can I change my plan later?
-              </Box>
-              <AccordionIcon as={PlusIcon} />
-            </AccordionButton>
-            <AccordionPanel
-              pb={4}
-              color={{ base: '#A1A1A1', lg: '#A2AA2A2' }}
-              fontFamily="Satoshi"
-              fontWeight="500"
-              fontSize={{ base: '8px', lg: '16px' }}
-              lineHeight={{ base: '16px', lg: '26px' }}
-            >
-              High-Definition Video is Video Of Higher Resolution And Quality
-              Than Standard Definition. build Your Future With Our Quality
-              Education. The Best And Largest All-In-One Online Tutoring
-              Platform In The World definition.
-            </AccordionPanel>
-          </AccordionItem>
-        </Accordion>
-        <Accordion defaultIndex={[1]} allowMultiple>
-          <AccordionItem
-            pt={{ base: '24px', lg: '32px' }}
-            borderTop="none"
-            borderBottomColor="#EAEAEA"
-            borderBottom={{ base: '12.6px', lg: '32px' }}
-          >
-            <AccordionButton
-              fontWeight="900"
-              color="#000F24"
-              fontFamily="Satoshi"
-              fontSize={{ base: '14px', lg: '24px' }}
-              lineHeight={{ base: '19px', lg: '32.4px' }}
-            >
-              <Box as="span" flex="1" textAlign="left">
-                Are the courses lifetime?
-              </Box>
-              <AccordionIcon as={PlusIcon} />
-            </AccordionButton>
-            <AccordionPanel
-              pb={4}
-              color={{ base: '#A1A1A1', lg: '#A2AA2A2' }}
-              fontFamily="Satoshi"
-              fontWeight="500"
-              fontSize={{ base: '8px', lg: '16px' }}
-              lineHeight={{ base: '16px', lg: '26px' }}
-            >
-              High-Definition Video is Video Of Higher Resolution And Quality
-              Than Standard Definition. build Your Future With Our Quality
-              Education. The Best And Largest All-In-One Online Tutoring
-              Platform In The World definition.
-            </AccordionPanel>
-          </AccordionItem>
-        </Accordion>
-        <Accordion defaultIndex={[1]} allowMultiple>
-          <AccordionItem
-            pt={{ base: '24px', lg: '32px' }}
-            borderTop="none"
-            borderBottomColor="#EAEAEA"
-            borderBottom={{ base: '12.6px', lg: '32px' }}
-          >
-            <AccordionButton
-              fontWeight="900"
-              color="#000F24"
-              fontFamily="Satoshi"
-              fontSize={{ base: '14px', lg: '24px' }}
-              lineHeight={{ base: '19px', lg: '32.4px' }}
-            >
-              <Box as="span" flex="1" textAlign="left">
-                Do I get Certified after taking the courses?
-              </Box>
-              <AccordionIcon as={PlusIcon} />
-            </AccordionButton>
-            <AccordionPanel
-              pb={4}
-              color={{ base: '#A1A1A1', lg: '#A2AA2A2' }}
-              fontFamily="Satoshi"
-              fontWeight="500"
-              fontSize={{ base: '8px', lg: '16px' }}
-              lineHeight={{ base: '16px', lg: '26px' }}
-            >
-              High-Definition Video is Video Of Higher Resolution And Quality
-              Than Standard Definition. build Your Future With Our Quality
-              Education. The Best And Largest All-In-One Online Tutoring
-              Platform In The World definition.
-            </AccordionPanel>
-          </AccordionItem>
-        </Accordion>
-        <Accordion defaultIndex={[1]} allowMultiple>
-          <AccordionItem
-            pt={{ base: '24px', lg: '32px' }}
-            borderTop="none"
-            borderBottomColor="#EAEAEA"
-            borderBottom={{ base: '12.6px', lg: '32px' }}
-          >
-            <AccordionButton
-              fontWeight="900"
-              color="#000F24"
-              fontFamily="Satoshi"
-              fontSize={{ base: '14px', lg: '24px' }}
-              lineHeight={{ base: '19px', lg: '32.4px' }}
-            >
-              <Box as="span" flex="1" textAlign="left">
-                How do I reach out to mentors?
-              </Box>
-              <AccordionIcon as={PlusIcon} />
-            </AccordionButton>
-            <AccordionPanel
-              pb={4}
-              color={{ base: '#A1A1A1', lg: '#A2AA2A2' }}
-              fontFamily="Satoshi"
-              fontWeight="500"
-              fontSize={{ base: '8px', lg: '16px' }}
-              lineHeight={{ base: '16px', lg: '26px' }}
-            >
-              High-Definition Video is Video Of Higher Resolution And Quality
-              Than Standard Definition. build Your Future With Our Quality
-              Education. The Best And Largest All-In-One Online Tutoring
-              Platform In The World definition.
-            </AccordionPanel>
-          </AccordionItem>
-        </Accordion>
-        <Accordion defaultIndex={[1]} allowMultiple>
-          <AccordionItem
-            pt={{ base: '24px', lg: '32px' }}
-            borderTop="none"
-            borderBottomColor="#EAEAEA"
-            borderBottom={{ base: '12.6px', lg: '32px' }}
-          >
-            <AccordionButton
-              fontWeight="900"
-              color="#000F24"
-              fontFamily="Satoshi"
-              fontSize={{ base: '14px', lg: '24px' }}
-              lineHeight={{ base: '19px', lg: '32.4px' }}
-            >
-              <Box as="span" flex="1" textAlign="left">
-                Do we get job ready after taking the courses?
-              </Box>
-              <AccordionIcon as={PlusIcon} />
-            </AccordionButton>
-            <AccordionPanel
-              pb={4}
-              color={{ base: '#A1A1A1', lg: '#A2AA2A2' }}
-              fontFamily="Satoshi"
-              fontWeight="500"
-              fontSize={{ base: '8px', lg: '16px' }}
-              lineHeight={{ base: '16px', lg: '26px' }}
-            >
-              High-Definition Video is Video Of Higher Resolution And Quality
-              Than Standard Definition. build Your Future With Our Quality
-              Education. The Best And Largest All-In-One Online Tutoring
-              Platform In The World definition.
-            </AccordionPanel>
-          </AccordionItem>
+        <Accordion allowToggle defaultIndex={[null]}>
+          {faqs.map((faq) => {
+            return (
+              <AccordionItem
+                key={faq.id}
+                pt={{ base: '24px', lg: '32px' }}
+                borderTop="none"
+                borderBottomColor="#EAEAEA"
+                borderBottom={{ base: '12.6px', lg: '32px' }}
+              >
+                {({ isExpanded }) => (
+                  <>
+                    <AccordionButton
+                      fontWeight="700"
+                      color={isExpanded ? '#004DB3' : '#000F24'}
+                      fontFamily="Satoshi"
+                      fontSize={{ base: '14px', lg: '24px' }}
+                      lineHeight={{ base: '19px', lg: '32.4px' }}
+                    >
+                      <Box as="span" flex="1" textAlign="left">
+                        {faq.question}
+                      </Box>
+                      <AccordionIcon as={isExpanded ? MinusIcon : PlusIcon} />
+                    </AccordionButton>
+                    <AccordionPanel
+                      pb={4}
+                      color={{ base: '#A1A1A1', lg: '#A2AA2A2' }}
+                      fontFamily="Satoshi"
+                      fontWeight="500"
+                      fontSize={{ base: '8px', lg: '16px' }}
+                      lineHeight={{ base: '16px', lg: '26px' }}
+                    >
+                      {faq.answer}
+                    </AccordionPanel>
+                  </>
+                )}
+              </AccordionItem>
+            );
+          })}
         </Accordion>
       </Box>
     </Box>

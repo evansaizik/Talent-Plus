@@ -10,10 +10,7 @@ import {
   CardBody,
 } from '@chakra-ui/react';
 import boy from '../assets/boy.svg';
-import grad from '../assets/grad.svg';
-import time from '../assets/time.svg';
-import dollar from '../assets/dollar.svg';
-import people from '../assets/people.svg';
+import offers from '../utils/offers';
 
 Text.defaultProps = {
   fontFamily: 'Satoshi',
@@ -38,10 +35,12 @@ const Course = () => {
           <Text
             textAlign={{ base: 'center', md: 'start' }}
             mt="8px"
+            mx='auto'
+            w={{base: '70%', lg: '100%'}}
             fontSize={{ base: '8px', md: '16px' }}
             fontWeight="500"
             color="#A1A1A1"
-            lineHeight={{ base: '15px', md: '28px' }}
+            lineHeight={{ base: '16px', md: '28px' }}
             textTransform="capitalize"
           >
             high-defination video is video of higher resolution and quality than
@@ -61,102 +60,32 @@ const Course = () => {
           templateColumns="repeat(2, 1fr)"
           alignItems={{ base: 'center', md: 'flex-start' }}
         >
-          <Card shadow="none" w={{ base: '100%' }}>
-            <CardHeader pb="0">
-              <Image src={grad} alt="grad" />
-            </CardHeader>
-            <CardBody>
-              <Text
-                fontWeight="700"
-                pb="5px"
-                fontSize={{ base: '12px', md: '16px' }}
-              >
-                Experienced Mentors
-              </Text>
-              <Text
-                fontWeight="500"
-                lineHeight="16px"
-                color="#A1A1A1"
-                fontSize={{ base: '8px', md: '12px' }}
-              >
-                high-defination video is video of higher resolution and quality
-                than standard definition. high-defination video is video of
-                higher resolution and quality than standard definition.
-              </Text>
-            </CardBody>
-          </Card>
-          <Card shadow="none" w={{ base: '100%' }}>
-            <CardHeader pb="0">
-              <Image src={people} alt="grad" />
-            </CardHeader>
-            <CardBody>
-              <Text
-                fontWeight="700"
-                pb="5px"
-                fontSize={{ base: '12px', md: '16px' }}
-              >
-                Affordable Prices
-              </Text>
-              <Text
-                fontWeight="500"
-                lineHeight="16px"
-                color="#A1A1A1"
-                fontSize={{ base: '8px', md: '12px' }}
-              >
-                high-defination video is video of higher resolution and quality
-                than standard definition. high-defination video is video of
-                higher resolution and quality than standard definition.
-              </Text>
-            </CardBody>
-          </Card>
-          <Card shadow="none" w={{ base: '100%' }}>
-            <CardHeader pb="0">
-              <Image src={dollar} alt="grad" />
-            </CardHeader>
-            <CardBody>
-              <Text
-                fontWeight="700"
-                pb="5px"
-                fontSize={{ base: '12px', md: '16px' }}
-              >
-                Affordable Prices
-              </Text>
-              <Text
-                fontWeight="500"
-                lineHeight="16px"
-                color="#A1A1A1"
-                fontSize={{ base: '8px', md: '12px' }}
-              >
-                high-defination video is video of higher resolution and quality
-                than standard definition. high-defination video is video of
-                higher resolution and quality than standard definition.
-              </Text>
-            </CardBody>
-          </Card>
-          <Card shadow="none" w={{ base: '100%' }}>
-            <CardHeader pb="0">
-              <Image src={time} alt="grad" />
-            </CardHeader>
-            <CardBody>
-              <Text
-                fontWeight="700"
-                pb="5px"
-                fontSize={{ base: '12px', md: '16px' }}
-              >
-                Flexible Learning
-              </Text>
-              <Text
-                fontWeight="500"
-                lineHeight="16px"
-                color="#A1A1A1"
-                fontSize={{ base: '8px', md: '12px' }}
-              >
-                high-defination video is video of higher resolution and quality
-                than standard definition. high-defination video is video of
-                higher resolution and quality than standard definition.
-              </Text>
-            </CardBody>
-          </Card>
+          {offers.map(offer => {
+            return (
+              <Card key={offer.id} shadow="none" w={{ base: '100%' }}>
+                <CardHeader pb="0">
+                  <Image src={offer.icon} alt="grad" />
+                </CardHeader>
+                <CardBody>
+                  <Text
+                    fontWeight="700"
+                    pb="5px"
+                    fontSize={{ base: '12px', md: '16px' }}
+                  >
+                    {offer.title}
+                  </Text>
+                  <Text
+                    fontWeight="500"
+                    lineHeight="16px"
+                    color="#A1A1A1"
+                    fontSize={{ base: '8px', md: '12px' }}
+                  >
+                    {offer.text}
+                  </Text>
+                </CardBody>
+              </Card>
+            );
+          })}
         </Grid>
       </GridItem>
     </Grid>

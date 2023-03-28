@@ -77,7 +77,7 @@ const Footer = () => {
           <UnorderedList ml="0" color="#FFF" listStyleType="none">
             <ListItem
               fontFamily="Satoshi"
-              fonmtWeight="400"
+              fontWeight="400"
               fontSize={{ base: '16px', lg: '24px' }}
               lineHeight={{ base: '21.6px', lg: '32px' }}
               mb="16px"
@@ -86,7 +86,7 @@ const Footer = () => {
             </ListItem>
             <ListItem
               fontFamily="Satoshi"
-              fonmtWeight="400"
+              fontWeight="400"
               fontSize={{ base: '16px', lg: '24px' }}
               lineHeight={{ base: '21.6px', lg: '32px' }}
               mb="16px"
@@ -95,7 +95,7 @@ const Footer = () => {
             </ListItem>
             <ListItem
               fontFamily="Satoshi"
-              fonmtWeight="400"
+              fontWeight="400"
               fontSize={{ base: '16px', lg: '24px' }}
               lineHeight={{ base: '21.6px', lg: '32px' }}
               mb="16px"
@@ -104,7 +104,7 @@ const Footer = () => {
             </ListItem>
             <ListItem
               fontFamily="Satoshi"
-              fonmtWeight="400"
+              fontWeight="400"
               fontSize={{ base: '16px', lg: '24px' }}
               lineHeight={{ base: '21.6px', lg: '32px' }}
               mb="16px"
@@ -113,7 +113,7 @@ const Footer = () => {
             </ListItem>
             <ListItem
               fontFamily="Satoshi"
-              fonmtWeight="400"
+              fontWeight="400"
               fontSize={{ base: '16px', lg: '24px' }}
               lineHeight={{ base: '21.6px', lg: '32px' }}
               mb="16px"
@@ -137,7 +137,7 @@ const Footer = () => {
           <UnorderedList ml="0" color="#FFF" listStyleType="none">
             <ListItem
               fontFamily="Satoshi"
-              fonmtWeight="400"
+              fontWeight="400"
               fontSize={{ base: '16px', lg: '24px' }}
               lineHeight={{ base: '21.6px', lg: '32px' }}
               mb="16px"
@@ -146,7 +146,7 @@ const Footer = () => {
             </ListItem>
             <ListItem
               fontFamily="Satoshi"
-              fonmtWeight="400"
+              fontWeight="400"
               fontSize={{ base: '16px', lg: '24px' }}
               lineHeight={{ base: '21.6px', lg: '32px' }}
               mb="16px"
@@ -155,7 +155,7 @@ const Footer = () => {
             </ListItem>
             <ListItem
               fontFamily="Satoshi"
-              fonmtWeight="400"
+              fontWeight="400"
               fontSize={{ base: '16px', lg: '24px' }}
               lineHeight={{ base: '21.6px', lg: '32px' }}
               mb="16px"
@@ -164,7 +164,7 @@ const Footer = () => {
             </ListItem>
             <ListItem
               fontFamily="Satoshi"
-              fonmtWeight="400"
+              fontWeight="400"
               fontSize={{ base: '16px', lg: '24px' }}
               lineHeight={{ base: '21.6px', lg: '32px' }}
               mb="16px"
@@ -173,7 +173,7 @@ const Footer = () => {
             </ListItem>
             <ListItem
               fontFamily="Satoshi"
-              fonmtWeight="400"
+              fontWeight="400"
               fontSize={{ base: '16px', lg: '24px' }}
               lineHeight={{ base: '21.6px', lg: '32px' }}
               mb="16px"
