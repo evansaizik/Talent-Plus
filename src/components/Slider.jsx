@@ -9,15 +9,14 @@ import {
   Image,
   keyframes,
 } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import clients from '../utils/clients';
-import classes from './Animation.module.css'
+import classes from './Animation.module.css';
 
 const animationKeyFrames = keyframes`
 0% {transform: translateX(0%);}
-100% {transform: translateX(-101%);}`
-const sliders = `${animationKeyFrames} 11s infinite  ease-in-out ` 
+100% {transform: translateX(-101%);}`;
+const sliders = `${animationKeyFrames} 11s infinite  ease-in-out `;
 
 const Slider = () => {
   const [index, setIndex] = useState(0);
@@ -37,9 +36,9 @@ const Slider = () => {
       <Box
         mx="auto"
         sx={{
-          '::-webkit-scrollbar' : {
+          '::-webkit-scrollbar': {
             color: 'transparent',
-          }
+          },
         }}
         w={{ base: '332px', lg: '603px' }}
         mt={{ base: '56px', md: '48px' }}

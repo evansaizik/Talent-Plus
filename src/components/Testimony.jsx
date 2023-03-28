@@ -1,9 +1,4 @@
-import {
-  Box,
-  Text,
-  Heading,
-  Image,
-} from '@chakra-ui/react';
+import { Box, Text, Heading, Image } from '@chakra-ui/react';
 import pagination from '../assets/pagination.svg';
 import Slider from './Slider';
 
@@ -11,7 +6,9 @@ const Testimony = () => {
   return (
     <Box bg="#F8F9FC" pb="40px">
       <Box pt={{ base: '70px', md: '135' }} m="auto">
-        <Heading fontSize={{base: '24px', lg: '56px'}} textAlign="center">What Our Clients Are Saying</Heading>
+        <Heading fontSize={{ base: '24px', lg: '56px' }} textAlign="center">
+          What Our Clients Are Saying
+        </Heading>
         <Text
           textAlign="center"
           mx="auto"
