@@ -32,6 +32,7 @@ or
 `docker run --name test -p 3000:5173 talent-plus`
 
 7. Open your browser and visit => 'localhost:port'
+port should be replaced with the port number specified in step 6.
 
 8. To exit the docker process, go to the terminal and run
 
