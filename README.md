@@ -23,7 +23,7 @@ note that the code above creates an image with the name "talent-plus" and tag na
 `docker run --name <preferredName> -d -p <port>:5173 talent-plus`
 
 The preferredName is the name of the container.
-5173 is the port exposed by the app running from the container.
+5173 is the port exposed by the app when the container is running.
 The port could be 80, 3000, 8080 etc, depending on the user.
 The -d flag is optional. so we can have somthing like this in the terminal.
 
@@ -31,7 +31,7 @@ The -d flag is optional. so we can have somthing like this in the terminal.
 or
 `docker run --name test -p 3000:5173 talent-plus`
 
-7. Open your browser and visit => 'localhost:<port>'
+7. Open your browser and visit => 'localhost:port'
 
 8. To exit the docker process, go to the terminal and run
 
