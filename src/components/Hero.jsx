@@ -32,7 +32,7 @@ const Hero = () => {
       <Image src={wordpress} position="absolute" bottom="35px" right="0px" />
       <Image src={figma} position="absolute" top="259px" left="18px" />
       <Image src={vsc} position="absolute" right="20px" top="40px" />
-      <Image src={hero} ml="auto" alt="hero" />;
+      <Image src={hero} ml="auto" alt="hero" />
     </Box>
   );
 };
